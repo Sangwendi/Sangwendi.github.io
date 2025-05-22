@@ -1,7 +1,7 @@
 # projects section data
 - name: test-paper-name
   gh_user: Sangwendi
-  repo: test-github-repository-name
+  repo: test-paper
   img:  https://raw.githubusercontent.com/Sangwendi/Sangwendi.github.io/refs/heads/master/images/projectImg/test-image.jpg
   
 # - name: Graduation design front desk
