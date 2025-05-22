@@ -1,0 +1,20 @@
+# projects section data
+- name: test-paper-name
+  gh_user: Sangwendi
+  repo: test-github-repository-name
+  img:  https://raw.githubusercontent.com/Sangwendi/Sangwendi.github.io/refs/heads/master/images/projectImg/test-image.jpg
+  
+# - name: Graduation design front desk
+#   gh_user: hw-star
+#   repo: Graduation-design---Front-desk
+#   img: https://raw.githubusercontent.com/Sangwendi/Sangwendi.github.io/refs/heads/master/images/projectImg/test-image.jpg
+
+# - name: Graduation design front end background
+#   gh_user: hw-star
+#   repo: Graduation-Design---Front-end-background
+#   img: https://raw.githubusercontent.com/hw-star/hw-star.github.io/refs/heads/master/images/projectImg/Graduation-project.png
+  
+# - name: The back end of graduation design
+#   gh_user: hw-star
+#   repo: Graduation-design---Front-desk
+#   img: https://raw.githubusercontent.com/hw-star/hw-star.github.io/refs/heads/master/images/projectImg/Graduation-project.png
