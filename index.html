@@ -1,0 +1,76 @@
+---
+layout: default
+robots: noindex
+---
+
+<!-- 主体开始 -->
+<div class="main-container">
+  <!-- 左侧个人信息 -->
+  <div class="sidebar">
+    <img src="{{ site.profilepic }}" alt="Profile Picture" class="profile-pic" id="toggle-theme">
+    <h2>{{ site.author.name }}</h2>
+    <ul style="list-style: none;">
+      <li>Bachelor: {{ site.author.bachelor }}</li>
+      <li>Master: {{ site.author.master }}</li>
+    </ul>
+    <p>📍 {{ site.author.weizhi }}</p>
+    <p>🏫 {{ site.author.now_school }}</p>
+    <p>📧 <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+    <p>🔗 <a href="https://orcid.org/{{ site.author.orcid }}" target="_blank">ORCID</a></p>
+    <p>🐱 <a href="https://github.com/{{ site.author.github_username }}" target="_blank">GitHub</a></p>
+    <p>📄 <a href="resume.html" target="_blank">Resume</a></p>
+    {% include footer.html %}
+  </div>
+
+  <!-- 右侧正文内容 -->
+  <div class="content">
+    <h3>🏙️ About Me</h3>
+    <p>I currently live in <strong>Xining</strong>, a highland city with rich culture and cool climate. I'm pursuing a Master's degree in <strong>Artificial Intelligence</strong> at <strong>Qinghai University</strong>, in the <strong>School of Computer Technology and Applications</strong>.</p>
+
+    <h3>🧰 Tech Stack</h3>
+    <ul>
+      <li><strong>Frontend:</strong> {{ site.skills.frontend | join: ', ' }}</li>
+      <li><strong>Backend:</strong> {{ site.skills.backend | join: ', ' }}</li>
+      <li><strong>AI / Deep Learning:</strong> {{ site.skills.ai | join: ', ' }}</li>
+      <li><strong>Others:</strong> {{ site.skills.others | join: ', ' }}</li>
+    </ul>
+
+     <h3>📝 Study Notes</h3>
+    <ul>
+      {% for note in site.notes %}
+      <li><a href="{{ note.url }}" target="_blank">{{ note.title }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <h3>📚 Publications</h3>
+    <ul>
+      {% for paper in site.publications %}
+      <li>
+        <strong>{{ paper.title }}</strong><br>
+        {{ paper.authors }}<br>
+        <em>{{ paper.venue }}</em> &nbsp;
+        {% if paper.demo %}<a href="{{ paper.demo }}" target="_blank"><span class="badge blue">Demo</span></a>{% endif %}
+        {% if paper.pdf %}<a href="{{ paper.pdf }}" target="_blank"><span class="badge green">PDF</span></a>{% endif %}
+        {% if paper.code %}<a href="{{ paper.code }}" target="_blank"><span class="badge dark">Code</span></a>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+
+    <h3>🎲 Fun Corner</h3>
+    <ul>
+      {% for item in site.fun %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    <div class="windmill-wrapper">
+      <div class="windmill">
+        <div class="blade blade1"></div>
+        <div class="blade blade2"></div>
+        <div class="blade blade3"></div>
+        <div class="blade blade4"></div>
+        <div class="center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
